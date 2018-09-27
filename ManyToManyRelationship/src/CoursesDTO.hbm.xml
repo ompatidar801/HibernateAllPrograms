@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="manyToMany6.CoursesDTO" table="CoursesTable">
+		<id name="courseID" column="courseID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="courseName" ></property>
+		<set name="school" cascade="all" table="Sch_Cour">
+			<key column="cour_id"></key>
+			<many-to-many class="manyToMany6.SchoolDTO" column="sch_id"/>
+		</set>
+		
+	</class>
+</hibernate-mapping>

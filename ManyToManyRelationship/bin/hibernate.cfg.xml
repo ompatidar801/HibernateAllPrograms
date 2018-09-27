@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "D:\HB ppt\hibernate-configuration-3.0.dtd">
+          
+<hibernate-configuration>
+	<session-factory>
+			<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+ 			<property name="connection.url">jdbc:mysql://localhost:3306/many2many</property>
+ 			<property name="connection.username">root</property>
+ 			<property name="connection.password">root</property>
+ 			
+ 			<property name="show_sql">true</property>
+ 			<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+ 			
+			<property name="hbm2ddl.auto">create</property>
+ 			
+ 			<!-- <mapping resource="VendorDTO.hbm.xml"/>
+ 			<mapping resource="CustomerDTO.hbm.xml"/> 
+ 			
+ 			<mapping resource="CustomerDTO2.hbm.xml"/>
+ 			<mapping resource="OrderDTO.hbm.xml"/> 
+ 			
+ 			<mapping resource="TeachersDTO.hbm.xml"/>
+ 			<mapping resource="StudentDTO.hbm.xml"/>
+ 			
+ 			<mapping resource="UnivercityDTO.hbm.xml"/>
+ 			<mapping resource="CollagesDTO.hbm.xml"/>
+ 			
+			<mapping resource="CountryDTO.hbm.xml"/>
+ 			<mapping resource="CitiesDTO.hbm.xml"/> 
+ 			
+ 			<mapping resource="FatherDTO.hbm.xml"/>
+ 			<mapping resource="ChildrenDTO.hbm.xml"/>
+ 			
+ 			<mapping resource="SchoolDTO.hbm.xml"/>
+ 			<mapping resource="CoursesDTO.hbm.xml"/>-->
+ 			
+ 			<!-- <mapping resource="MobileCompanyDTO.hbm.xml"/>
+ 			<mapping resource="ModelsDTO.hbm.xml"/>  -->
+ 			
+ 			<mapping resource="Customer2.hbm.xml"/>
+ 			<mapping resource="Orders.hbm.xml"/> 
+			<mapping resource="CustomerOrders.hbm.xml"/> 
+			 			
+ 			<!--<mapping resource="PersonsDTO.hbm.xml"/>
+ 			<mapping resource="MobileNoDTO.hbm.xml"/>
+ 			
+ 			<mapping resource="BankDTO.hbm.xml"/>
+ 			<mapping resource="BankCustomerDTO.hbm.xml"/>
+ 			
+ 			<mapping resource="DepartmentsDTO.hbm.xml"/>
+ 			<mapping resource="EmployeeTableDTO.hbm.xml"/> 
+ 			
+ 			<mapping resource="Category.hbm.xml"/>
+    		<mapping resource="Product.hbm.xml"/> -->
+ 					
+	</session-factory>
+</hibernate-configuration>

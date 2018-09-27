@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="custom.Customer2" table="customer2">
+		<id name="custID" column="cust_ID">
+			<generator class="assigned"></generator>
+		</id> 
+		<property name="custName" ></property>
+		<property name="custAddress" ></property>
+		
+		<set name="cust_ord" cascade="all" >
+			<key column="fkCustID"></key>
+			<one-to-many  class="custom.CustomerOrders" />
+		</set>
+	</class>
+</hibernate-mapping>

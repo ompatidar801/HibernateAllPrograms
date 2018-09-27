@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="manyToMany5.ChildrenDTO" table="ChildrenTable">
+		<id name="cdid" column="cdid">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="cdname" ></property>
+		<property name="cdaddress" ></property>
+		<set name="father" cascade="all" table="Fath_Child">
+			<key column="ch_id"></key>
+			<many-to-many class="manyToMany5.FatherDTO" column="fat_id"/>
+		</set>		
+	</class>
+</hibernate-mapping>

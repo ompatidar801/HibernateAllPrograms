@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="custom.CustomerOrders" table="customer_orders">
+    	<id name="cust_orderID" column="cust_orderID">
+    		<generator class="assigned"></generator>
+    	</id>
+    	
+	    <property name="createdBy"></property>
+		<property name="updatedBy"></property>
+		<property name="fkcustID"></property>
+	</class>
+</hibernate-mapping>
