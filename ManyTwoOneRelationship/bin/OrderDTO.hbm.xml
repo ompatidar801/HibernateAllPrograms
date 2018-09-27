@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "/home/pp/Desktop/eclipse (2)/Omp2/hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+		<class name="many2one1.OrderDTO" table="OrderTable">
+			<id name="orderId" column="orderId"> 
+				<generator class="assigned"></generator>
+			</id>
+			
+			<property name="product"></property>
+			<many-to-one name="parentObject" column="CustomerObject" class="many2one1.CustomerDTO2" cascade="all"></many-to-one>
+			
+		</class>
+</hibernate-mapping>

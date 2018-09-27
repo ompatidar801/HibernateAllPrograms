@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="oneToOne5.ChildrenDTO" table="ChildrenTable">
+		<id name="cdid" column="cdid" >
+			<generator class="foreign">
+				<param name="property">fath</param>
+			</generator>
+		</id>
+		
+		<property name="cdname" ></property>
+		<property name="cdaddress" ></property>
+
+		<one-to-one name="fath" class="oneToOne5.FatherDTO" cascade="all"/>		
+	</class>
+</hibernate-mapping>

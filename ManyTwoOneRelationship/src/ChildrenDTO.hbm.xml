@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "/home/pp/Desktop/eclipse (2)/Omp2/hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="many2one5.ChildrenDTO" table="ChildrenTable">
+		<id name="cdid" column="cdid">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="cdname" ></property>
+		<property name="cdaddress" ></property>
+		<many-to-one name="parentObject" column="FatherObject" class="many2one5.FatherDTO" cascade="all"></many-to-one>
+		
+	</class>
+</hibernate-mapping>

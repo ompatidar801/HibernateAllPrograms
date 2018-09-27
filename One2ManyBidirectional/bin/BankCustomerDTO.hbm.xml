@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="one2many9.BankCustomerDTO" table="BankCustomerTable">
+		<id name="cstid" column="cstid">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="custname" ></property>
+		<property name="phoneno"></property>
+		<many-to-one name="bank" column="b_code" class="one2many9.BankDTO" cascade="all"></many-to-one>
+	</class>
+</hibernate-mapping>

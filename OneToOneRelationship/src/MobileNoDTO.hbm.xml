@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="oneToOne8.MobileNoDTO" table="MobileNoTable">
+		<id name="mobno" column="mobno">
+			<generator class="foreign">
+				<param name="property">person</param>
+			</generator>
+		</id>
+		
+		<property name="AdharNo" ></property>
+		<one-to-one name="person" class="oneToOne8.PersonsDTO" cascade="all"></one-to-one>
+		
+	</class>
+</hibernate-mapping>

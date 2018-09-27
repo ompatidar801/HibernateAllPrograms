@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="oneToOne9.BankDTO" table="BankTable">
+		<id name="branchCode" column="branchCode">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="bankName" column="bankName" length="10"></property>
+	
+	</class>
+</hibernate-mapping>

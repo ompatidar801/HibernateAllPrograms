@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "/home/pp/Desktop/eclipse (2)/Omp2/hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="many2one3.CollagesDTO" table="CollagesTable">
+		<id name="collageId" column="collageId">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="collageName" ></property>
+		<many-to-one name="parentObject" column="UnivercityObject" class="many2one3.UnivercityDTO" cascade="all"></many-to-one>
+		
+	</class>
+</hibernate-mapping>

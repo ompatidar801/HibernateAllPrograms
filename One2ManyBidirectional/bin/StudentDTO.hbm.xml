@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="one2many2.StudentDTO" table="StudentTable">
+		<id name="sid" column="sid">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="sname" ></property>
+		<property name="subject" ></property>
+		<!-- <property name="foreignsid" ></property> -->
+		<many-to-one name="parentObject" column="tid" class="one2many2.TeachersDTO" cascade="all"  ></many-to-one>
+		
+	</class>
+</hibernate-mapping>
