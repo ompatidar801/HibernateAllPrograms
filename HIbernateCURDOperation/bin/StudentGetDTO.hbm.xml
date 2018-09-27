@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "/home/pp/Desktop/eclipse (2)/Omp2/hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping package="hibernateGet">
+	<class name="StudentGetDTO" table="StudentGetInformation">
+		<id name="stId" column="st_id">
+				<generator class="increment"></generator>
+		</id>
+		
+		<property name="stName" column="st_name"></property>
+		<property name="stAddress" column="st_address"></property>
+		<property name="stAge" column="st_age"></property>
+		
+	</class>	
+
+</hibernate-mapping>

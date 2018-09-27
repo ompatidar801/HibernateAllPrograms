@@ -1,0 +1,19 @@
+package curdannotationbased;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class Stock implements Serializable
+{
+	private String stockID;
+	
+	
+	private String stockProduct;
+	
+	
+	private 
+}

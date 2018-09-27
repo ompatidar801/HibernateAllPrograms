@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "/home/pp/Desktop/eclipse (2)/Omp2/hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping package="hibernateCaches">
+	<class name = "AccountDetailsDTO" table="EmployeeTable">
+		<cache usage="read-write" />
+		<id name = "eid" column="emp_id">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="ename" column="emp_name"></property>
+		<property name="edepartment" column="emp_department"></property>
+		<property name="salary" column="emp_salary"></property>
+		
+		
+	</class>
+</hibernate-mapping>

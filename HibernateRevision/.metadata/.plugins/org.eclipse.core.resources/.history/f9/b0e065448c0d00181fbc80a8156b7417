@@ -1,0 +1,46 @@
+package o2mxmlbased;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class TeachersSubjectMain 
+{
+	static SessionFactory sf = new Configuration().configure().buildSessionFactory();
+	public static void saveTeachersSubjectMain()
+	{
+		Session sc = sf.openSession();
+		
+		Teachers tc = new Teachers();
+		tc.settID(11);
+		tc.settName("Santosh");
+		
+		sc.close();
+	}
+	
+	public static void getTeachersSubjectMain()
+	{
+		Session sc = sf.openSession();
+		sc.close();
+	}
+	
+	public static void updateTeachersSubjectMain()
+	{
+		Session sc = sf.openSession();
+		sc.close();
+	}
+	
+	public static void deleteTeachersSubjectMain()
+	{
+		Session sc = sf.openSession();
+		sc.close();
+	}
+	
+	public static void main(String[] args)
+	{
+		saveTeachersSubjectMain();
+		//getTeachersSubjectMain();
+		//updateTeachersSubjectMain();
+		//deleteTeachersSubjectMain();
+	}
+}

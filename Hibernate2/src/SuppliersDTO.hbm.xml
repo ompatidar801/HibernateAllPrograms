@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+ 
+<hibernate-mapping>
+
+	<class name="hb1.SuppliersDTO" table="suppliers">  
+    	<id name="sp_id" column="SP_ID">  
+     		<generator class="increment"/>  
+    	</id>  
+            
+    	<property name="sp_name" column="SP_FIRST_NAME"/> 
+   	 	<property name="sp_address" column="SP_ADDRESS"/>
+    	            
+  	</class>  
+</hibernate-mapping>  

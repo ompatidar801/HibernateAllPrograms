@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "/home/pp/Desktop/eclipse (2)/Omp2/hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping package="namedQueryPro">
+	<class name = "EmployeeDTO" table="EmployeeTable">
+		<id name = "eid" column="emp_id">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="ename" column="emp_name"></property>
+		<property name="edepartment" column="emp_department"></property>
+		<property name="salary" column="emp_salary"></property>
+	
+	</class>
+	
+	<!-- to get all element in table -->
+	<!-- <query name="findDetails">  
+	<![CDATA[ from EmployeeDTO ]]>  
+	</query> --> 
+	
+	<!-- to get all element in table condition based-->
+	<!-- <query name="findDetails">  
+	<![CDATA[ from EmployeeDTO e where e.eid =:eid ]]>  
+	</query> 	 -->
+	
+	<!-- <query name="findDetails">  
+	<![CDATA[ from EmployeeDTO e where e.ename =:ename ]]>  
+	</query> -->
+	
+	<!-- to get all element in table condition based through parameterMarker(?)-->
+	<query name="findDetails">  
+	<![CDATA[ from EmployeeDTO e where e.eid =? and e.ename =? ]]>  
+	</query>
+</hibernate-mapping>

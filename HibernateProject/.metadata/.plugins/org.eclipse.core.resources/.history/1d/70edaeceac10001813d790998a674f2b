@@ -1,0 +1,65 @@
+package hiberanteTask;
+
+import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Cascade;
+
+@Entity
+@Table(name="Categories")
+public class Categories implements Serializable 
+{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@Column(name="cat_ID")
+	private int catID;
+	
+	@Id
+	@Column(name="catName")
+	private String catName;
+	
+	@OneToMany(targetEntity=SubCategories.class ,cascade=CascadeType.ALL)
+	@JoinColumn(name="")
+	private Set<SubCategories> subCategaries = new HashSet<SubCategories>();
+	
+	
+	public Set<SubCategories> getSubCategaries() {
+		return subCategaries;
+	}
+
+	public void setSubCategaries(Set<SubCategories> subCategaries) {
+		this.subCategaries = subCategaries;
+	}
+
+	public int getCatID() {
+		return catID;
+	}
+
+	public void setCatID(int catID) {
+		this.catID = catID;
+	}
+
+	public String getCatName() {
+		return catName;
+	}
+
+	public void setCatName(String catName) {
+		this.catName = catName;
+	}
+	
+	
+}

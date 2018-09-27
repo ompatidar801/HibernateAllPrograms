@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 20, 2018 6:22:05 PM by Hibernate Tools 5.1.0.Alpha1 -->
+<hibernate-mapping>
+    <class name="entities.Refoundorreplace" table="refoundorreplace" catalog="HibernateTask" optimistic-lock="version">
+        <id name="reId" type="int">
+            <column name="reID" />
+            <generator class="assigned" />
+        </id>
+        <property name="refoundAmount" type="java.lang.Double">
+            <column name="RefoundAmount" precision="22" scale="0" />
+        </property>
+        <property name="replaceProduct" type="string">
+            <column name="ReplaceProduct" />
+        </property>
+        <property name="payOptionsId" type="java.lang.Integer">
+            <column name="Pay_Options_ID" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,34 @@
+package hiberanteTask;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.AnnotationConfiguration;
+
+@SuppressWarnings("deprecation")
+public class HibernateTaskMainFile 
+{
+	static AnnotationConfiguration ac = new AnnotationConfiguration().configure();
+	static SessionFactory sf = ac.buildSessionFactory();
+	
+	public static void saveCatagorySubCategory()
+	{
+		Session sn = sf.openSession();
+		
+		Categories cat1 = new Categories();
+		cat1.setCatID(754);
+		cat1.setCatName("Electronic");
+		
+		Categories cat2 = new Categories();
+		cat2.setCatID(755);
+		cat2.setCatName("Clothes");
+		
+		
+	}
+	
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

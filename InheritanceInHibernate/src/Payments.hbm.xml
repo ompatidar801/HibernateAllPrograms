@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="tablePerClass.Payments" table="PaymentsTable">
+		<id name="pay_id" column="pay_ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<discriminator column="discriColumn" type="string" length="100"></discriminator>
+		<property name="amount"></property>
+		
+		<subclass name="tablePerClass.CreditCard" discriminator-value="credit_card">
+			<property name="cd_name" column="cc_name" length="10"></property>
+		</subclass>
+		
+		<subclass name="tablePerClass.Cheaque" discriminator-value="cheaque">
+			<property name="cheaque_Name" column="cheaque_name" length="10"></property>
+		</subclass>
+	</class>
+</hibernate-mapping>

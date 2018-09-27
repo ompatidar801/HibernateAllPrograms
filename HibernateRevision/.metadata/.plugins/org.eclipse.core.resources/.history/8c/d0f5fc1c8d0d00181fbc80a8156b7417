@@ -1,0 +1,67 @@
+package o2mxmlbased;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class TeachersSubjectMain 
+{
+	static SessionFactory sf = new Configuration().configure().buildSessionFactory();
+	public static void saveTeachersSubjectMain()
+	{
+		Session sc = sf.openSession();
+		
+		Teachers tc = new Teachers();
+		tc.settID(11);
+		tc.settName("Santosh");
+		
+		Subject sb = new Subject();
+		sb.setSubID(756);
+		sb.setSubName("Physics");
+		
+		Subject sb1 = new Subject();
+		sb1.setSubID(757);
+		sb1.setSubName("Chemistry");
+		
+		Subject sb2 = new Subject();
+		sb2.setSubID(758);
+		sb2.setSubName("English");
+		
+		Set<Subject> s1 = new HashSet<Subject>();
+		s1.add(sb);
+		s1.add(sb1);
+		s1.add(sb2);
+		
+		
+		sc.close();
+	}
+	
+	public static void getTeachersSubjectMain()
+	{
+		Session sc = sf.openSession();
+		sc.close();
+	}
+	
+	public static void updateTeachersSubjectMain()
+	{
+		Session sc = sf.openSession();
+		sc.close();
+	}
+	
+	public static void deleteTeachersSubjectMain()
+	{
+		Session sc = sf.openSession();
+		sc.close();
+	}
+	
+	public static void main(String[] args)
+	{
+		saveTeachersSubjectMain();
+		//getTeachersSubjectMain();
+		//updateTeachersSubjectMain();
+		//deleteTeachersSubjectMain();
+	}
+}

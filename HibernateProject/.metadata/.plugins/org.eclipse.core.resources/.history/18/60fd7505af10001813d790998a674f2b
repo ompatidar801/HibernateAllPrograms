@@ -1,0 +1,12 @@
+package hiberanteTask;
+
+public class HibernateTaskMainFile 
+{
+	
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

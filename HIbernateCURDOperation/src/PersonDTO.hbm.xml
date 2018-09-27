@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+    <!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\Hibernate\hibernate-mapping-3.0.dtd">  
+      
+     <hibernate-mapping>  
+      <class name="hibernateAdd.PersonDTO" table="person345" discriminator-value="tab">  
+        <id name="id">  
+         <generator class="increment"/>  
+        </id>  
+                
+        <property name="firstname" column="FIRST_NAME"></property>  
+        <property name="lastname" column="LAST_NAME"></property>  
+                
+      </class>  
+                
+     </hibernate-mapping>  

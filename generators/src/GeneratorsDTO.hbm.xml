@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "/home/pp/Desktop/eclipse (2)/Omp2/hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping package="generators">
+	<class name = "GeneratorsDTO" table="generators">
+		<id name = "id" column="id">
+			<generator class="hilo">
+
+	                 <param name="generators">generators</param>
+
+	                 <param name="id">id</param>
+
+	        </generator>
+		</id>
+		
+		<property name="name" column="name"></property>
+		<property name="age" column="age"></property>
+				
+	</class>
+</hibernate-mapping>

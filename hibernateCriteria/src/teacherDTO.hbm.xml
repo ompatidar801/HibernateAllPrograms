@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "/home/pp/Desktop/eclipse (2)/Omp2/hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping package="hibernateCriteria">
+	<class name = "TeacherDTO" table="Teacher">
+		<id name = "id" column="emp_id">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="name" column="name"></property>
+		<property name="department" column="department"></property>
+		<property name="salary" column="salary"></property>
+		
+		
+	</class>
+</hibernate-mapping>
