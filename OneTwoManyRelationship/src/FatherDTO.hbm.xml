@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="one2many5.FatherDTO" table="FatherTable">
+		<id name="fid" column="fid">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="fname" column="fname" length="10"></property>
+		<property name="address" column="address" length="10"></property>
+		
+		<set name="son" cascade="all">
+			<key column="foreignCDID"></key>
+			<one-to-many class="one2many5.ChildrenDTO"/>
+		</set>
+	</class>
+</hibernate-mapping>

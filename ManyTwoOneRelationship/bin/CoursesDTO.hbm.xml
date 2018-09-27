@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "/home/pp/Desktop/eclipse (2)/Omp2/hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="many2one6.CoursesDTO" table="CoursesTable">
+		<id name="courseID" column="courseID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="courseName" ></property>
+		<many-to-one name="parentObject" column="SchoolObject" class="many2one6.SchoolDTO" cascade="all"></many-to-one>
+		
+	</class>
+</hibernate-mapping>

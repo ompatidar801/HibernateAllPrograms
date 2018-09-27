@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "/home/pp/Desktop/eclipse (2)/Omp2/hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="many2one8.MobileNoDTO" table="MobileNoTable">
+		<id name="mobno" column="mobno">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="AdharNo" ></property>
+		<many-to-one name="parentObject" column="TeachersObject" class="many2one8.PersonsDTO" cascade="all"></many-to-one>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+		<class name="one2many10.DepartmentsDTO" table="DepartmentsTable">
+			<id name="deptID" column="deptID" > 
+				<generator class="assigned"></generator>
+			</id>
+			
+			<property name="deptName"></property>
+			
+			<set name="empID" cascade="all" inverse="true">
+				<key column="deptID"></key>
+				<one-to-many class="one2many10.EmployeeTableDTO"/>
+			</set>
+	</class>
+</hibernate-mapping>

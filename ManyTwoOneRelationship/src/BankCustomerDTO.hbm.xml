@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "/home/pp/Desktop/eclipse (2)/Omp2/hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="many2one9.BankCustomerDTO" table="BankCustomerTable">
+		<id name="cstid" column="cstid">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="custname" ></property>
+		<property name="phoneno"></property>
+		<many-to-one name="parentObject" column="BankObject" class="many2one9.BankDTO" cascade="all"></many-to-one>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+		<class name="one2many1.OrderDTO" table="OrderTable">
+			<id name="orderId" column="orderId"> 
+				<generator class="assigned"></generator>
+			</id>
+			
+			<property name="product"></property>
+			<property name="foreignCustId"></property>
+			
+		</class>
+</hibernate-mapping>

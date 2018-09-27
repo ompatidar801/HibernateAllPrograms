@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+		<class name="one2many.CustomerDTO" table="CustomerTable">
+			<id name="cid" column="cid"> 
+				<generator class="assigned"></generator>
+			</id>
+			
+			<property name="cname"></property>
+			<property name="foreignvid" column="foreignvid" insert="false"></property>
+			
+		</class>
+</hibernate-mapping>
