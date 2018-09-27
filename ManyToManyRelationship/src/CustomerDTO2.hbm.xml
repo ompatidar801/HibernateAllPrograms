@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+		<class name="manyToMany1.CustomerDTO2" table="CustomerTable2">
+			<id name="cstid" column="cstid" > 
+				<generator class="assigned"></generator>
+			</id>
+			
+			<property name="custname"></property>
+			<property name="phoneno"></property>
+			
+			<set name="order" cascade="all" table="Cust_Order">
+				<key column="cust_id" ></key>
+				<many-to-many class="manyToMany1.OrderDTO" column="o_id" />
+			</set>
+	</class>
+</hibernate-mapping>

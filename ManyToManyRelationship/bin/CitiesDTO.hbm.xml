@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="manyToMany4.CitiesDTO" table="CitiesTable">
+		<id name="cityCode" column="cityCode">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="cityName" ></property>
+		<set name="country" cascade="all" table="Coun_City">
+			<key column="cit_id" ></key>
+			<many-to-many class="manyToMany4.CountryDTO" column="cou_id"/>
+		</set>
+	</class>
+</hibernate-mapping>

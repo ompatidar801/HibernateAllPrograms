@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "D:\HB ppt\hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping>
+	<class name="manyToMany7.ModelsDTO" table="ModelsTable">
+		<id name="modelNO" column="modelNO">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="modelName" ></property>
+		<set name="mobCompany" cascade="all" table="Company_Models">
+			<key column="mod_id" />
+			<many-to-many class="manyToMany7.MobileCompanyDTO" column="comp_id" />
+		</set>
+	
+	</class>
+</hibernate-mapping>
