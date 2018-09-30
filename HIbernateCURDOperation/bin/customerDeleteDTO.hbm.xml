@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+     "/home/pp/Desktop/eclipse (2)/Omp2/hibernate-mapping-3.0.dtd">
+     
+<hibernate-mapping package="hibernateDelete">
+	<class name="CustomerDeleteDTO" table="CustomerDeleteDetails">
+		<id name="cstId" column="cust_id">
+				<generator class="increment"></generator>
+		</id>
+		
+		<property name="cstName" column="cust_name"></property>
+		<property name="cstAddress" column="cust_address"></property>
+		<property name="cstAge" column="cust_age"></property>
+		
+	</class>	
+
+</hibernate-mapping>
