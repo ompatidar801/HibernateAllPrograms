@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"D:\Hibernate\hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="hql.Mobile" table="Mobile">
+		<id name="mobID" column="mob_ID"></id>
+		<property name="company_Name" />
+		<property name="model_Name" />
+		<property name="mobile_price" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"D:\Hibernate\hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="hql.Items" table="items">
+
+<id name="itemId" />
+<property name="itemName" length="10"/>
+<property name="itemPrice"/>
+
+</class>
+</hibernate-mapping>
