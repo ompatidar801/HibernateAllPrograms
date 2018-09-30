@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibrenate-mapping package="hb1">
+
+	<class name="StudentDTO" table="students">  
+    	<id name="id" column="stID">  
+     		<generator class="assigned"/>  
+    	</id>  
+            
+    	<property name="firstName" column="FIRST_NAME"></property>  
+    	<property name="lastName" column="LAST_NAME"></property>  
+   	 <property name="address" column="ADDRESS"></property>
+    	<property name="logIn" column="LOG_IN"></property>
+    	<property name="password" ></property>            
+  	</class>  
+</hibrenate-mapping>  
