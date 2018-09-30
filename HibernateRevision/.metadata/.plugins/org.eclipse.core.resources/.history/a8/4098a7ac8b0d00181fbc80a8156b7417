@@ -1,9 +1,0 @@
-package o2mxmlbased;
-
-public class TeachersSubjectMain 
-{
-	public static void main(String[] args)
-	{
-		
-	}
-}

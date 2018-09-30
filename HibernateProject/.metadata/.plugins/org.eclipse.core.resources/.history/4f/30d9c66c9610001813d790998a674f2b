@@ -1,8 +1,0 @@
-package hiberanteTask;
-
-import java.io;
-
-public class Orders implements Serializable
-{
-
-}
