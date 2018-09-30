@@ -1,0 +1,45 @@
+package hiberanteTask;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Categories")
+public class Categories implements Serializable 
+{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@Column(name="cat_ID")
+	private int catID;
+	
+	@Column(name="catName")
+	private String catName;
+	
+	
+	public int getCatID() {
+		return catID;
+	}
+
+	public void setCatID(int catID) {
+		this.catID = catID;
+	}
+
+	public String getCatName() {
+		return catName;
+	}
+
+	public void setCatName(String catName) {
+		this.catName = catName;
+	}
+	
+	
+}

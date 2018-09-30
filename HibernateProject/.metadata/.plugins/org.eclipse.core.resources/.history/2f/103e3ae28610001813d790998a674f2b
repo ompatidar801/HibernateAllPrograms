@@ -1,0 +1,13 @@
+package hiberanteTask;
+
+import java.io.Serializable;
+
+public class ProductPrice implements Serializable
+{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}
