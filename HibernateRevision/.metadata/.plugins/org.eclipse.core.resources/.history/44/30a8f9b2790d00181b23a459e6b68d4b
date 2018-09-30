@@ -1,0 +1,10 @@
+package curdxmlbased;
+
+public class StudentCURDMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

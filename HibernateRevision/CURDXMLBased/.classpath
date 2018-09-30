@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/ehcache.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/hibernate3.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/hibernate-commons-annotations-3.2.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/hibernate-core-3.6.7.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/javassist.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/javassist-3.9.0.GA.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/jms-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/hibernate jar/jsr250-api-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Hibernate/mysql-connector-java-5.1.45/mysql-connector-java-5.1.45/mysql-connector-java-5.1.45-bin.jar"/>
+	<classpathentry kind="lib" path="D:/hibernatejar/jta.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
