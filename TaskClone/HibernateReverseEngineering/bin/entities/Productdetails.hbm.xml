@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 20, 2018 6:22:05 PM by Hibernate Tools 5.1.0.Alpha1 -->
+<hibernate-mapping>
+    <class name="entities.Productdetails" table="productdetails" catalog="HibernateTask" optimistic-lock="version">
+        <id name="prDetId" type="int">
+            <column name="pr_det_Id" />
+            <generator class="assigned" />
+        </id>
+        <property name="brand" type="string">
+            <column name="Brand" />
+        </property>
+        <property name="colour" type="string">
+            <column name="colour" />
+        </property>
+        <property name="model" type="string">
+            <column name="Model" />
+        </property>
+        <property name="price" type="java.lang.Float">
+            <column name="price" precision="12" scale="0" />
+        </property>
+        <property name="productName" type="string">
+            <column name="ProductName" />
+        </property>
+        <property name="warranty" type="string">
+            <column name="Warranty" />
+        </property>
+        <property name="productId" type="java.lang.Integer">
+            <column name="ProductID" />
+        </property>
+    </class>
+</hibernate-mapping>

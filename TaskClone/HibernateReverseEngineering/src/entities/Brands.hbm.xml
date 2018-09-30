@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 20, 2018 6:22:05 PM by Hibernate Tools 5.1.0.Alpha1 -->
+<hibernate-mapping>
+    <class name="entities.Brands" table="brands" catalog="HibernateTask" optimistic-lock="version">
+        <id name="brandName" type="string">
+            <column name="BrandName" />
+            <generator class="assigned" />
+        </id>
+        <property name="brandId" type="java.lang.Integer">
+            <column name="BrandID" />
+        </property>
+        <property name="subCategories" type="string">
+            <column name="subCategories" />
+        </property>
+    </class>
+</hibernate-mapping>

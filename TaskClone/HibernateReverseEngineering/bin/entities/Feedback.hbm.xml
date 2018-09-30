@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 20, 2018 6:22:05 PM by Hibernate Tools 5.1.0.Alpha1 -->
+<hibernate-mapping>
+    <class name="entities.Feedback" table="feedback" catalog="HibernateTask" optimistic-lock="version">
+        <id name="fdsno" type="int">
+            <column name="FDSno" />
+            <generator class="assigned" />
+        </id>
+        <property name="aboutDelievery" type="string">
+            <column name="AboutDelievery" />
+        </property>
+        <property name="aboutProduct" type="string">
+            <column name="AboutProduct" />
+        </property>
+        <property name="aboutSeller" type="string">
+            <column name="AboutSeller" />
+        </property>
+        <property name="userId" type="java.lang.Integer">
+            <column name="User_ID" />
+        </property>
+    </class>
+</hibernate-mapping>
