@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="tablePerConcreteClass.Vehicle" table="Vehicle">
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="name"></property>
+		<property name="LicenceNumber"></property>
+		
+		<union-subclass name="tablePerConcreteClass.TwoWheeler" >
+			<property name="steeringHandle" column="tw_id" length="50"></property>
+		</union-subclass>
+		
+		<union-subclass name="tablePerConcreteClass.FourWheeler" >
+			<property name="steeringWheel" column="fw_id" length="50"></property>
+		</union-subclass>
+	</class>
+</hibernate-mapping>
