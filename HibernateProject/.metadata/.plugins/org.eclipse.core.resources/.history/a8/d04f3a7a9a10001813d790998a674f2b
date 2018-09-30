@@ -1,8 +1,0 @@
-package hiberanteTask;
-
-import java.io.Serializable;
-
-public class PaymemtOptions implements Serializable
-{
-	
-}
